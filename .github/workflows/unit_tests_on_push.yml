@@ -16,8 +16,9 @@ jobs:
       - name: Node install
         run: npm install
       - name: Run unit tests
-        run: npm test
+        run: npm test > ./logs/test-unitaire.log
       - name: Upload log file
         uses: actions/upload-artifact@v2
         with:
-          name: test-unitaire.log
+          name: test-unitaire
+          path: ./logs/test-unitaire.log
