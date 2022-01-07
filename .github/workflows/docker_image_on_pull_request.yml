@@ -39,4 +39,4 @@ jobs:
           push: true
           # Nom de l'image à push (ex: lbmika/app:1.0.0)
           # Attention : tout en minuscule
-          tags: lbmika/weatherapp:1.0.0
+          tags: lemika/weatherapp:1.0.0
