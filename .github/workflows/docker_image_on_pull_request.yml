@@ -23,8 +23,8 @@ jobs:
     steps:
       - name: Récupération du repo
         uses: actions/checkout@v2
-      - name: Install DEMU Docker
-        uses: docker/setup-demu-action@v1
+      - name: Install QEMU Docker
+        uses: docker/setup-qemu-action@v1
       - name: Install BuildX Docker
         uses: docker/setup-buildx-action@v1
       - name: Connexion à Docker
